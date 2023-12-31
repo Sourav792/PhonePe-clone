@@ -1,0 +1,768 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --black-333-color: #333333;
+  --primary-btn-color: #c4bcf2;
+  --secondary-btn-color: #ffffff;
+  --secondary-btn-background-color: #07c3de;
+  --secondary-btn-hover-background-color: #10d6f2;
+  --header-a-hover-color: #5f259f;
+}
+/* ---------------------------------------------start -----------------------------------------*/
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: sans-serif;
+}
+.flex {
+  display: flex;
+}
+.df {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* -------------------------------primory and secondary button ------------------------------*/
+.primary-btn {
+  border: 0.1rem solid #4cdeff;
+  border-radius: 25px;
+  padding: 0.7rem 2rem;
+  font-size: 1rem;
+  font-weight: 550;
+  color: var(--primary-btn-color);
+  text-decoration: none;
+}
+.primary-btn:hover {
+  cursor: pointer;
+  opacity: .85;
+}
+.secondary-btn {
+  font-weight: 550;
+  font-size: 1rem;
+  padding: .6rem 2rem;
+  border-radius: 25px;
+  border: .1rem solid transparent;
+  text-decoration: none;
+  color: var(--white-color);
+  background: var(--header-a-hover-color);
+}
+.secondary-btn:hover {
+  cursor: pointer;
+  opacity: .85;
+}
+.viloet-color {
+  color: var(--header-a-hover-color);
+}
+.white-color {
+  color: var(--white-color);
+}
+/* ---------------------------------------header section -----------------------------------------*/
+.header-section {
+  width: 100%;
+  height: 5rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--white-color);
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+}
+.header {
+  width: 92%;
+  height: 5rem;
+  align-items: center;
+  justify-content: space-between;
+}
+/* ------------------------------------------- left header -----------------------------------------*/
+.left-header {
+  width: 13%;
+  display: flex;
+  align-items: center;
+}
+.left-header img {
+  width: 100%;
+}
+/* ------------------------------------------- right header -----------------------------------------*/
+.right-header {
+  height: 3.1rem;
+  width: 87%;
+  display: flex;
+  align-items: center;
+}
+.right-header ul {
+  list-style: none;
+  padding: 0 7%;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+.right-header ul li a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 1rem;
+  color: var(--black-color);
+  transition: 0.2s ease-in-out;
+  font-weight: 545;
+}
+.right-header ul li a:hover {
+  color: var(--header-a-hover-color);
+}
+/* ------------------------------------------- hamburger icon section ----------------------------*/
+.hamburger {
+  display: none;
+}
+.hamburger i {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+/*---------------------------------------- hero section ------------------------------------------*/
+.hero-section {
+  width: 100%;
+  height: 450px;
+  margin-top: 80px;
+  display: flex;
+  align-items: start;
+}
+.slider {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+.slides {
+  height: 400px;
+  width: 500%;
+  display: flex;
+}
+.slides input {
+  display: none;
+}
+.slide {
+  width: 20%;
+  transition: 2s;
+  position: relative;
+}
+#first-slide {
+  background: url(images/hero-1.jpg);
+  background-position: center;
+  background-size: cover;
+}
+#sec-slide {
+  background: url(images/hero-2.jpg);
+  background-position: center;
+  background-size: cover;
+}
+#third-slide {
+  background: url(images/hero-3.png);
+  background-position: center;
+  background-size: cover;
+}
+#forth-slide {
+  background: url(images/hero-4.png);
+  background-position: center;
+  background-size: cover;
+}
+#fifth-slide {
+  background: url(images/hero-5.png);
+  background-position: center;
+  background-size: cover;
+}
+.hero {
+  width: 38%;
+  height: 280px;
+  position: absolute;
+  left: 90px;
+  top: 50px;
+}
+.hero h1 {
+ font-size: 2.8rem;
+}
+.hero h1 span {
+  color: #4cdeff;
+}
+.hero p {
+  margin-block: 1rem;
+  font-size: 1.2rem;
+  font-weight: 540;
+}
+.hero button {
+  border: none;
+  background-color: transparent;
+  width: 100%;
+  height: 40px;
+  margin-top: 1.2rem;
+  display: flex;
+  align-items: start;
+}
+#sec-slide button a {
+  background-color: #17c55f;
+  border: none;
+  color: var(--white-color);
+}
+#forth-slide h1 {
+  position: relative;
+  margin-bottom: 3rem;
+}
+#forth-slide h1::after {
+  content: "Beat of progress";
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--primary-btn-color);
+  position: absolute;
+  top: 2.5rem;
+  left: 0;
+}
+.hero-manual {
+  position: absolute;
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.manual-btn {
+  border-radius: 10px;
+  padding: 7px;
+  border: 2px solid var(--header-a-hover-color);
+  cursor: pointer;
+  transition: 1s;
+}
+.manual-btn:not(:last-child) {
+  margin-right: 25px;
+}
+.manual-btn:hover {
+  background-color: var(--header-a-hover-color);
+}
+
+#radio1:checked ~ .first {
+  margin-left: 0;
+}
+#radio2:checked ~ .first {
+  margin-left: -20%;
+}
+#radio3:checked ~ .first {
+  margin-left: -40%;
+}
+#radio4:checked ~ .first {
+  margin-left: -60%;
+}
+#radio5:checked ~ .first {
+  margin-left: -80%;
+}
+
+/*--------------------------- automatically hero navigation ----------------------------------*/
+.hero-auto {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 420px;
+}
+.hero-auto div {
+  border: 2px solid var(--header-a-hover-color);
+  padding: 7px;
+  border-radius: 10px;
+  transition: 1s;
+}
+.hero-auto div:not(:last-child) {
+  margin-right: 25px;
+}
+
+#radio1:checked ~ .hero-auto .auto-btn1 {
+  background-color: var(--header-a-hover-color);
+}
+#radio2:checked ~ .hero-auto .auto-btn2 {
+  background-color: var(--header-a-hover-color);
+}
+#radio3:checked ~ .hero-auto .auto-btn3 {
+  background-color: var(--header-a-hover-color);
+}
+#radio4:checked ~ .hero-auto .auto-btn4 {
+  background-color: var(--header-a-hover-color);
+}
+#radio5:checked ~ .hero-auto .auto-btn5 {
+  background-color: var(--header-a-hover-color);
+}
+/*------------------------------------- mutual funds section ----------------------------------------*/
+.mutual-funds-section {
+  width: 100%;
+  height: 270px;
+  margin-top: 70px;
+}
+.mutual-funds {
+  width: 92%;
+  height: 270px;
+  gap: 30px;
+}
+.mutual-box {
+  width: 530px;
+  border-radius: 10px;
+  border: 0.5px solid #0f1111;
+  height: 270px;
+  background: url(images/m1.svg);
+  background-position: 270px 0;
+  background-repeat: no-repeat;
+  padding-top: 50px;
+  padding-left: 30px;
+}
+.mutual-box:nth-child(2) {
+  background: url(images/m2.svg);
+  background-position: 270px 0;
+  background-repeat: no-repeat;
+}
+.mutual-box:hover {
+  box-shadow: 0 0 25px #2c2b2b;
+  border: none;
+  cursor: pointer;
+}
+.mutual-box h2 {
+  color: #361968;
+}
+.mutual-box p {
+  margin-top: 30px;
+}
+.mutual-box p a {
+  text-decoration: none;
+  color: var(--black-333-color);
+  font-size: 16px;
+  font-weight: 540;
+  letter-spacing: 0.5px;
+}
+.mutual-box button {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  border: none;
+  margin-top: 30px;
+  background: transparent;
+}
+.mutual-box button i {
+  color: #361968;
+  width: 35px;
+  height: 30px;
+  font-size: 25px;
+  font-weight: 550;
+}
+/*------------------------------------- payment section --------------------------------------------*/
+.payment-section {
+  width: 100%;
+  height: 550px;
+  margin-top: 50px;
+}
+.payment {
+  width: 92%;
+  height: 550px;
+  justify-content: space-between;
+}
+.payment-content-section {
+  width: 48%;
+  height: 550px;
+}
+.payment-content {
+  width: 100%;
+  height: 550px;
+  padding-left: 25px;
+}
+.payment-content h1 {
+  width: 95%;
+  color: #361374;
+  font-size: 2.3rem;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+.pay-content,
+.payment-content hr {
+  width: 95%;
+}
+.pay-content p {
+  font-size: 1.26rem;
+  font-weight: 550;
+  letter-spacing: 0.7px;
+  margin-block: 15px;
+  color: #323232;
+}
+.pay-content h5 {
+  color: #232028;
+  font-weight: 500;
+  font-size: 0.9rem;
+  letter-spacing: 0.4px;
+  margin-bottom: 30px;
+  line-height: 20px;
+}
+.payment-video {
+  width: 50%;
+  height: 550px;
+}
+/*------------------------------------ badhte ja section -----------------------------------------*/
+.badhte-ja-section {
+  width: 100%;
+  height: 500px;
+  margin-top: 30px;
+}
+.badhte-ja {
+  width: 92%;
+  height: 500px;
+  flex-direction: column;
+}
+.logo-1 {
+  width: 570px;
+}
+.logo-1 img {
+  width: 100%;
+}
+.logo-2 {
+  width: 200px;
+}
+.logo-2 img {
+  width: 100%;
+}
+.badhte-ja-content {
+  width: 100%;
+  height: 200px;
+  padding: 0 5%;
+  margin-top: 30px;
+  text-align: center;
+}
+.badhte-ja-content p {
+  color: var(--black-333-color);
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+  line-height: 30px;
+  margin-bottom: 15px;
+}
+.badhte-ja-content a {
+  text-decoration: none;
+  color: #361374;
+  font-size: 16px;
+  font-weight: 550;
+}
+/*------------------------------------- trust banner section -----------------------------------------*/
+.trust-banner-section {
+  width: 100%;
+  height: 320px;
+  margin-top: 50px;
+}
+.trust-banner {
+  width: 92%;
+  height: 320px;
+  align-items: center;
+  justify-content: space-between;
+  background: url(images/trust.png);
+  background-position: center;
+  background-size: cover;
+  background-color: #967edd;
+  border-radius: 35px;
+}
+/*-------------------------------left trust banner section -------------------------------------*/
+.left-trust-banner {
+  width: 17%;
+  height: 230px;
+  margin-left: 65px;
+}
+.left-trust-banner img {
+  width: 100%;
+}
+/*-----------------------------------right trust banner section ------------------------------------*/
+.right-trust-banner {
+  width: 60%;
+  height: 75%;
+}
+.right-trust-banner h1 {
+  font-size: 2.7rem;
+  color: var(--white-color);
+  margin-bottom: 25px;
+}
+.right-trust-banner p {
+  display: inline-block;
+  font-size: 1.3rem;
+  color: var(--white-color);
+  line-height: 30px;
+  letter-spacing: 0.5px;
+}
+.right-trust {
+  width: 100%;
+  height: 35px;
+  gap: 30px;
+  margin-top: 65px;
+  align-items: center;
+  justify-content: start;
+}
+.r-1 img {
+  height: 30px;
+}
+/*------------------------------------------ app section ----------------------------------------*/
+.app-section {
+  width: 100%;
+  height: 630px;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+.app {
+  width: 92%;
+  height: 630px;
+  padding-top: 20px;
+  flex-direction: column;
+}
+.app h1 {
+  width: 100%;
+  text-align: center;
+  color: #361968;
+  line-height: 60px;
+  font-size: 2.5rem;
+}
+.app button {
+  width: 20%;
+  height: 60px;
+  border: none;
+  margin-top: 20px;
+  background: transparent;
+}
+.app button a  {
+  background-color: var(--secondary-btn-background-color);
+  font-weight: 540;
+  font-size: 1rem;
+  padding: 1.2rem 2.4rem;
+  border-radius: 25px;
+  border: 1px solid transparent;
+  color: var(--secondary-btn-color);
+  text-decoration: none;
+}
+.app button a img {
+  margin-left: 10px;
+  height: 13px;
+}
+.app button a:hover {
+  background-color: var(--secondary-btn-hover-background-color);
+  cursor: pointer;
+}
+.app-img {
+  width: 100%;
+  height: 380px;
+  margin-top: 30px;
+  background: url(images/app-img.png);
+  background-size: cover;
+  background-position: center;
+}
+/*--------------------------------------- business section ----------------------------------------*/
+.business-section {
+  width: 100%;
+  height: 550px;
+  margin-top: 50px;
+}
+.business {
+  width: 92%;
+  height: 550px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.business-video {
+  width: 45%;
+  height: 550px;
+}
+/*------------------------------------- business content section -----------------------------------*/
+.business-content {
+  width: 45%;
+  height: 550px;
+  padding: 30px 0 0 0;
+}
+.business-content h1 {
+  color: #361968;
+  letter-spacing: 0.7px;
+  font-size: 2.5rem;
+}
+.business-content p {
+  color: var(--black-333-color);
+  font-size: 1rem;
+  margin-top: 35px;
+  letter-spacing: 0.4px;
+}
+.business-content h2 {
+  margin-top: 30px;
+  color: #323232;
+  font-weight: 540;
+  letter-spacing: 0.5px;
+  margin-bottom: 25px;
+}
+.business-content h3 {
+  color: #6739b7;
+  font-weight: 550;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 50px;
+  margin-block: 10px;
+}
+.business-content h3:hover i {
+  transition: 0.7s ease;
+  transform: translateX(1rem);
+}
+.business-content a {
+  display: block;
+  padding: 3px 0;
+  text-decoration: none;
+  color: var(--black-333-color);
+  font-size: 1rem;
+  letter-spacing: 0.7px;
+  font-weight: 500;
+}
+.business-content hr {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+/*-------------------------------------- cta section ----------------------------------------------*/
+.cta-section {
+  width: 100%;
+  height: 450px;
+  margin-top: 70px;
+  background: url(images/cta-img.png);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+}
+.cta {
+  width: 92%;
+  height: 100%;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+.cta-section-1 {
+  width: 100%;
+  height: 135px;
+}
+.cta-1 {
+  width: 250px;
+  height: 100px;
+  margin-left: 135px;
+}
+.cta-1 h4 {
+  color: #dcd3ff;
+  font-size: 1.3rem;
+  font-weight: 450;
+  letter-spacing: 0.7px;
+}
+.cta-1 h4 span {
+  color: var(--white-color);
+  font-size: 2rem;
+  font-weight: 550;
+  letter-spacing: 0.7px;
+}
+.cta-section-2 {
+  width: 100%;
+  height: 60px;
+  gap: 110px;
+}
+.cta-section-2 h2 {
+  color: #d4cbff;
+  letter-spacing: 0.7px;
+}
+.cta-section-2 button {
+  background: transparent;
+  border: none;
+}
+.cta-section-2 button a {
+  color: var(--white-color);
+}
+
+/*---------------------------------------------- footer section --------------------------------------*/
+footer {
+  height: 830px;
+  display: flex;
+  align-items: center;
+}
+.footer-section {
+  width: 100%;
+  height: 780px;
+  margin-top: 15px;
+}
+.footer {
+  width: 92%;
+  height: 780px;
+  flex-direction: column;
+}
+/*---------------------------------------------- footer links --------------------------------------*/
+.footer-links {
+  width: 100%;
+  height: 680px;
+  gap: 15px;
+}
+.footer-links-1 {
+  width: 200px;
+  height: 100%;
+}
+.footer-logo img {
+  width: 90%;
+}
+.footer-links-1 h3 {
+  color: var(--black-color);
+  font-size: 1.05rem;
+  margin-top: 20px;
+  padding: 5px 0;
+}
+.footer-links-1 ul {
+  list-style: none;
+  margin-top: 10px;
+  padding: 0 5px;
+}
+.footer-links-1 ul li a {
+  text-decoration: none;
+  color: #0f1111;
+  font-size: 14px;
+  font-weight: 450;
+  line-height: 2rem;
+}
+.footer-links-1 ul li a:hover,
+.footer-links-1 h3:hover {
+  color: #6739b7;
+}
+.f-1 img {
+  width: 150px;
+  margin-block: 10px;
+}
+.f-2 img {
+  width: 160px;
+  margin-top: 10px;
+}
+.footer-media {
+  height: 40px;
+  width: 100%;
+  align-items: center;
+  margin-top: 20px;
+  flex-direction: row-reverse;
+}
+/*--------------------------------------- footer social media --------------------------------------*/
+.social-media {
+  height: 100%;
+  padding: 0 10px;
+}
+/*--------------------------------------- footer copyright  --------------------------------------*/
+.footer-copyright {
+  height: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 200px;
+}
+.footer-copyright p {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  color: var(--black-333-color);
+  letter-spacing: 0.5px;
+  font-size: 16px;
+}
+/*----------------------------------------- end -------------------------------------------------*/

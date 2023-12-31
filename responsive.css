@@ -1,0 +1,621 @@
+/* ---------------------------------------- max width 1024px --------------------------------------*/
+@media screen and (max-width: 1024px) {
+  /* -------------------------------------- header section --------------------------------------*/
+  .header {
+    width: 95%;
+  }
+  .right-header ul {
+    padding: 0 4%;
+  }
+  .right-header ul li a {
+    font-size: 0.9rem;
+  }
+    /* ----------------------------------- hero section ----------------------------------------*/
+.hero {
+  left: 50px;
+}
+.hero h1 {
+  font-size: 2.5rem;
+}
+.hero p {
+  font-size: 1rem;
+}
+  /* -------------------------------------- mutual box --------------------------------------------*/
+  .mutual-box {
+    background-position: 210px 0;
+    padding-top: 35px;
+  }
+  /* -------------------------------------- left trust banner --------------------------------------*/
+  .left-trust-banner {
+    width: 20%;
+    height: 150px;
+    margin-left: 30px;
+  }
+  .left-trust-banner img {
+    height: 140px;
+  }
+  /* ------------------------------------- right trust banner --------------------------------------*/
+  .right-trust-banner {
+    width: 65%;
+  }
+  .right-trust {
+    margin-top: 40px;
+  }
+  /* -------------------------------------- app section --------------------------------------------*/
+  .app {
+    width: 100%;
+  }
+  .app button {
+    width: 100%;
+  }
+  /* -------------------------------------- business section --------------------------------------*/
+  .business-content {
+    width: 50%;
+  }
+  /* -------------------------------------- cta section -------------------------------------------*/
+  .cta-1 {
+    margin-left: 60px;
+  }
+  .cta-section-2 {
+    gap: 50px;
+  }
+  .cta-section-2 h2 {
+    font-size: 1.25rem;
+  }
+  /* -------------------------------------- footer section ----------------------------------------*/
+  .footer {
+    width: 98%;
+  }
+  .footer-links-1 h3 {
+    margin-top: 10px;
+  }
+  .footer-links-1 ul li a:hover {
+    color: var(--black-color);
+  }
+} 
+
+/* ---------------------------------------- max width 768px --------------------------------------*/
+@media screen and (max-width: 768px) {
+  /* -------------------------------------- primary and secondary btn ----------------------------*/
+  .primary-btn {
+    padding: .5rem 1.5rem;
+    font-size: .75rem;
+    font-weight: 550;
+  }
+  /* -------------------------------------- header section ----------------------------------------*/
+  .header {
+    width: 95%;
+    position: relative;
+  }
+  .left-header {
+    width: 20%;
+  }
+  /* -------------------------------------- right header -----------------------------------------*/
+  .right-header {
+    display: none;
+    position: absolute;
+    top: 5rem;
+    right: -30px;
+    width: 320px;
+    height: 570px;
+    padding: 3.1rem 0;
+    background-color: var(--white-color);
+    justify-content: center;
+    align-items: start;
+  }
+  .right-header ul {
+    width: 100%;
+    height: 60%;
+    padding: 0 10%;
+    align-items: start;
+    flex-direction: column;
+  }
+  .right-header ul li a {
+    display: block;
+    font-size: 1rem;
+  }
+  .right-header.active {
+    display: block;
+  }
+  /* -------------------------------------- hamburger  -------------------------------------------*/
+  .hamburger {
+    display: flex;
+    width: 2rem;
+    height: 3.1rem;
+  }
+    /* -------------------------------------- hamburger  -------------------------------------------*/
+    .hero {
+      width: 45%;
+      left: 30px;
+    }
+  /* ---------------------------------- mutual funds section  --------------------------------------*/
+  .mutual-funds-section {
+    height: 540px;
+  }
+  .mutual-funds {
+    height: 540px;
+    flex-direction: column;
+  }
+  .mutual-box {
+    background-position: 270px 0;
+  }
+  /* ------------------------------------ payment section ------------------------------------------*/
+  .payment-section {
+    height: 1150px;
+    align-items: start;
+  }
+  .payment {
+    height: 1100px;
+    flex-direction: column;
+  }
+  .payment-content {
+    padding-left: 0;
+  }
+  .pay-content, .payment-content hr , .payment-content h1 {
+    width: 100%;
+  }
+  .payment-content-section {
+    width: 100%;
+  }
+  .payment-video {
+    width: 100%;
+  }
+  .pay-content p {
+    font-size: 1.3rem;
+    margin-block: 18px;
+  }
+  .pay-content h5 {
+    font-size: 1.1rem;
+    line-height: 25px;
+  }
+  /* -------------------------------------- badhte ja section  -----------------------------------*/
+  .logo-1 {
+    width: 450px;
+  }
+  .logo-2 {
+    width: 150px;
+    margin-top: 15px;
+  }
+  .badhte-ja-content p {
+    font-size: .9rem;
+    line-height: 25px;
+  }
+  /* -------------------------------------- trust banner section  ---------------------------------*/
+  .trust-banner-section , .trust-banner {
+    height: 450px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .left-trust-banner {
+       height: 170px;
+       display: flex;
+       margin-left: 0;
+       align-items: end;
+  }
+  .right-trust-banner {
+    width: 90%;
+    height: 55%;
+    text-align: center;
+  }
+  .right-trust-banner h1 {
+    font-size: 2rem;
+  }
+  .right-trust-banner p {
+    font-size: 1rem;
+    line-height: 25px;
+  }
+  .right-trust {
+    justify-content: center;
+  }
+  /* -------------------------------------- app section -----------------------------------------*/
+  .app-section, .app {
+    height: 560px;
+    padding-top: 0;
+  }
+  .app h1 {
+    font-size: 2rem;
+    line-height: 40px;
+  }
+  .app button a {
+    font-weight: 550;
+    font-size: .85rem;
+    padding: 1rem 1.7rem;
+  }
+  /* -------------------------------------- business section --------------------------------------*/
+  .business-section, .business {
+    height: 1100px;
+    flex-direction: column-reverse;
+  }
+  .business-video , .business-content {
+    width: 100%;
+  } 
+  /* -------------------------------------- cta section  ------------------------------------------*/
+  .cta-1 {
+    margin-left: 25px;
+    height: 80px;
+  }
+  .cta-1 h4{
+    font-size: 1.1rem;
+  }
+  .cta-section-2 {
+    gap: 25px;
+  }
+  .cta-section-2 h2 {
+    font-size: 1rem;
+  }
+  /* -------------------------------------- footer section -----------------------------------------*/
+  footer {
+    height: 570px;
+  }
+  .footer-section, .footer {
+    height: 550px;
+  }
+  .footer-links {
+    width: 90%;
+    height: 400px;
+    flex-direction: column;
+  }
+  .footer-links-1 h3 {
+    margin-top: 0;
+    cursor: pointer;
+  }
+  .footer-links-1 ul {
+    display: none;
+  }
+  #see-all-h3 {
+    display: none;
+  }
+  .f-1 , .f-2 {
+    display: none;
+  }
+  .footer-media {
+    flex-direction: row;
+    padding: 0 1.9rem;
+  }
+  .footer-copyright {
+    padding-left: 2rem;
+    margin-top: 1rem;
+  }
+}
+
+/* ---------------------------------------- max width 640px --------------------------------------*/
+@media screen and (max-width: 640px) {
+  /* ----------------------------------- primary and secondary btn -------------------------------*/
+  .primary-btn, .secondary-btn {
+    padding: .4rem 1rem;
+    font-size: .7rem;
+    font-weight: 500;
+  }
+     /* -------------------------------------- hero section -------------------------------------------*/
+ .hero-section {
+  height: 350px;
+ }
+   .slider, .slides {
+    height: 300px;
+   }
+  .hero {
+    width: 43%;
+    height: 200px;
+    top: 50px;
+    left: 30px;
+  }
+  .hero h1 {
+    font-size: 1.4rem;
+  }
+  .hero p {
+    font-size: .8rem;
+  }
+  .hero-auto {
+    margin-top: 320px;
+  }
+  /* -------------------------------------- trust banner -----------------------------------------*/
+  .left-trust-banner {
+    width: 25%;
+  }
+  .r-1 img {
+    height: 25px;
+  }
+   /* -------------------------------------- app button  -----------------------------------------*/
+  .app button a {
+    font-weight: 550;
+    font-size: .85rem;
+    padding: .7rem 1.5rem;
+  }
+  /* -------------------------------------- cta section  -----------------------------------------*/
+  .cta-1 h4 span{
+    font-size: 1.5rem;
+  }
+  .cta-section-2 h2 {
+    font-size: .9rem;
+    letter-spacing: 0;
+  }
+  /* -------------------------------------- footer media  -----------------------------------------*/
+  .footer-section, footer {
+    height: 500px;
+  }
+  .footer {
+    height: 480px;
+  }
+  .footer-links {
+    height: 350px;
+  }
+  .footer-links-1:nth-child(1)  {
+    height: fit-content;
+  }
+  .footer-links-1 {
+    height: 30px;
+  }
+  .footer-media {
+    padding: 0 1.5rem;
+  }
+}
+
+/* ---------------------------------------- max width 479px --------------------------------------*/
+@media screen and (max-width: 479px) {
+  /* -------------------------------------- left header ------------------------------------------*/
+  .left-header {
+    width: 30%;
+  }
+  /* -------------------------------------- hero section ------------------------------------------*/
+  .hero-section {
+    height: 300px;
+    background: url(images/hero-5.png);
+    background-size: cover;
+    background-position: center;
+  }
+  .slider {
+    display: none;
+  }
+  /* -------------------------------------- mutual section ----------------------------------------*/
+  .mutual-box, .mutual-box:nth-child(2) {
+    width: 400px;
+    padding-left: 15px;
+    background-position: 170px 0;
+  }
+  .mutual-box h2 {
+    font-size: 1.25rem;
+  }
+  .mutual-box p a {
+    font-size: .9rem;
+  }
+ /* -------------------------------------- payment section --------------------------------------------*/
+ .payment-section {
+  height: 870px;
+}
+.payment{
+  height: 850px;
+}
+ .payment-video {
+  height: 275px;
+}
+.payment-video video {
+  width: 100%;
+}
+  /* -------------------------------------- badhte ja section --------------------------------------*/
+  .badhte-ja {
+    width: 100%;
+  }
+  .logo-1 {
+    padding-right: 25px;
+    width: 400px;
+  }
+  /* -------------------------------------- left trust banner  -------------------------------------*/
+  .left-trust-banner {
+    width: 33%;
+  }
+  .right-trust-banner h1 {
+    font-size: 1.6rem;
+  }
+  .right-trust-banner p {
+    font-size: .9rem;
+    line-height: 20px;
+  }
+  /* -------------------------------------- app section --------------------------------------------*/
+  .app h1 {
+    width: 80%;
+  }
+ /* -------------------------------------- business video-------------------------------------*/
+  .business-section {
+    height: 870px;
+  }
+  .business {
+    height: 850px;
+  }
+  .business-video {
+    height: 275px;
+  }
+  .business-video video {
+    height: 100%;
+  }
+  /* -------------------------------------- cta section --------------------------------------------*/
+  .cta-section {
+    height: 900px;
+  }
+  .cta-section-1 {
+    justify-content: space-between;
+    flex-direction: column;
+    height: 300px;
+  }
+  .cta-1 {
+    height: 100%;
+  }
+  .cta-1 h4 {
+    font-size: 1.2rem;
+  }
+  .cta-1 h4 span {
+    font-size: 2rem;
+  }
+  .cta-section-2 {
+    flex-direction: column;
+    width: 89%;
+    height: 150px;
+    align-items: start;
+  }
+  .cta-section-2 h2 {
+    font-size: 1.5rem;
+    width: 70%;
+  }
+  /* -------------------------------------- footer media -------------------------------------------*/
+  .footer-media {
+    padding: 0 1rem;
+  }
+}
+
+/* ---------------------------------------- max width 425px --------------------------------------*/
+@media screen and (max-width: 425px) {
+  /* -------------------------------------- left header ------------------------------------------*/
+  .left-header {
+    width: 30%;
+  }
+  /* -------------------------------------- hero section ------------------------------------------*/
+  .hero {
+    left: 0;
+    top: 0;
+  }
+  /* -------------------------------------- mutual section ----------------------------------------*/
+  .mutual-funds-section, .mutual-funds {
+    height: 400px;
+  }
+  .mutual-box, .mutual-box:nth-child(2) {
+    width: 300px;
+    height: 200px;
+    background-position: 150px -40px;
+  }
+  .mutual-box h2 {
+    font-size: 1.1rem;
+  }
+  .mutual-box p {
+    margin-top: 20px;
+  }
+  .mutual-box p a {
+    font-size: .8rem;
+  }
+  .mutual-box button {
+    margin-top: 15px;
+  }
+  /* ----------------------------------- payment section ----------------------------------------*/  
+  .payment-section {
+    height: 820px;
+  }
+  .payment {
+    height: 800px;
+  }
+  .payment-content-section {
+    height: 500px;
+  }
+  .payment-content h1 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  .pay-content p {
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+  }
+  .pay-content h5 {
+    font-size: .85rem;
+    margin-bottom: 30px;
+  }
+  /* -------------------------------------- badhte ja section --------------------------------------*/
+  .badhte-ja-content p {
+    line-height: 20px;
+  }
+  /* -------------------------------------- left trust banner  -------------------------------------*/
+  .left-trust-banner {
+    width: 35%;
+  }
+  .right-trust-banner p {
+    font-size: .8rem;
+  }
+  /* -------------------------------------- app section --------------------------------------------*/
+  .app h1 {
+    font-size: 1.8rem;
+  }
+  /* ---------------------------------- business content section ----------------------------------*/
+  .business-content h1 {
+    font-size: 2rem;
+  }
+  .business-content p {
+    font-size: .9rem;
+    margin-top: 25px;
+  }
+  .business-content h2 {
+    margin-block: 20px;
+  }
+  .business-content h3 {
+    font-size: 1.1rem;
+    padding-right: 40px;
+  }
+  .business-content a {
+    font-size: .9rem;
+  }
+  .social-media {
+    padding-left: 5px;
+  }
+  .footer-copyright {
+    padding-left: 22px;
+  }
+}
+
+/* ---------------------------------------- max width 375px --------------------------------------*/
+@media screen and (max-width: 375px) {
+  /* -------------------------------------- badhte ja section --------------------------------------*/
+  .badhte-ja-section, .badhte-ja {
+    height: 420px;
+  }
+  .logo-1 {
+    width: 280px;
+  }
+  .logo-2 {
+    margin-top: 0;
+  }
+  .badhte-ja-content {
+    height: 270px;
+  }
+
+  /* -------------------------------------- cta section --------------------------------------*/
+  .cta-section-2 {
+    margin-top: 20px;
+  }
+    /* -------------------------------------- footer section -----------------------------------------*/
+    footer {
+      height: 520px;
+    }
+    .footer-section, .footer {
+      height: 500px;
+    }
+    .footer-links {
+      height: 345px;
+    }
+    .footer-links-1 h3 {
+      margin-block: 0;
+    }
+    .footer-media {
+      padding: 0 .5rem;
+    }
+    .footer-copyright {
+      padding-left: 1.1rem;
+    }
+}
+
+/* ---------------------------------------- max width 320px --------------------------------------*/
+@media screen and (max-width: 320px) {
+  .mutual-box, .mutual-box:nth-child(2) {
+    width: 100%;
+  }
+   /* -------------------------------------- payment section---------------------------------------*/
+ .payment-section {
+  height: 850px;
+}
+.payment{
+  gap: 60px;
+}
+  /* -------------------------------------- left trust banner -----------------------------------*/
+  .left-trust-banner {
+    width: 50%;
+  }
+  /* -------------------------------------- footer media -------------------------------------------*/
+  .footer-media {
+    padding: 0 .4rem;
+  }
+}
+
